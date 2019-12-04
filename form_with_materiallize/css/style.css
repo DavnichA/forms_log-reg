@@ -1,0 +1,140 @@
+.user-cabinet-header {
+	font-size: 20px;
+}
+
+.site-title {
+	font-size: 24px;
+}
+
+/* кнопка закрытия модального окна */
+.modal-close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 32px;
+	height: 32px;
+	opacity: .3;
+	cursor: pointer;
+}
+.modal-close:hover {
+	opacity: 1;
+}
+
+.modal-close:before, .modal-close:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 33px;
+	width: 2px;
+	background-color: #333;
+}
+.modal-close:before {
+	transform: rotate(45deg);
+}
+.modal-close:after {
+	transform: rotate(-45deg);
+}
+
+/* модальное окно логина*/
+
+
+.modal-login {
+	width: 100%;
+	max-width: 35vw;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+	box-shadow: 0 3px 10px -.5px rgba(0,0,0,.2);
+	text-align: center;
+	padding: 30px;
+	border-radius: 2px;
+	background-color: #fff;
+	transition: .3s all;
+	visibility: hidden;
+	opacity: 0;
+
+}
+/* модальное окно регистрации */
+.modal-registration {
+	width: 30vw;
+	position: relative;
+	top: 40vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 20;
+	box-shadow: 0 3px 10px -.5px rgba(0,0,0,.2);
+	border-radius: 5px;
+	background-color: #fff;
+	transition: .3s all;
+	visibility: hidden;
+	opacity: 0;
+	overflow: hidden;
+}
+.form-slider {
+	width: 60vw;
+	transition: all ease 1s;
+}
+
+.left-part, .right-part {
+	width: 30vw;
+	float: left;
+	padding: 10px;
+}
+.right-part {
+	max-height: 46vh;
+	overflow-y: scroll;
+}
+#signup-email {
+	margin-top: 10px;
+}
+/*
+/* обвертка модальных окон */
+.modal-overlay-all {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	z-index: 10;
+	transition: .3s all;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* остальные елементы*/
+.switch label .lever {
+	margin: 0;
+}
+
+.agreement {
+	margin-left: 1vw;
+}
+.form-slider-click {
+	font-weight: bold;
+	opacity: 1;
+	cursor: pointer;
+}
+
+
+.form-slider-click:hover {
+	color: #216F71;
+}
+.form-slider-back {
+	display: block;
+	margin: 20px 0 0 10px;
+	cursor: pointer;
+}
+.form-slider-back:hover {
+	color: #216F71;
+}
+.modal {
+	transform: none;
+}

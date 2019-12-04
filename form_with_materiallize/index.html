@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile device -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- IE browsers -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="materiallize/materialize.min.css">
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Form</title>
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h1 class="site-title center-align">Registration and Login</h1>
+				</div>
+				<div class="col s6">
+					<button class="modal-open-login waves-effect waves-light btn-small" data-modal="modal-1">Log-in</button>
+					<button class="modal-open-registration waves-effect waves-light btn-small" data-modal="modal-2">Registration</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- Форма регистрации -->
+	<div class="modal-registration" data-modal="modal-2">
+		<span class="modal-close" data-modal="modal-2"></span>
+
+		<div class="form-slider">
+			<div class="left-part">
+				<form>
+			 		<div class="row">
+			 			<div class="input-field col s12">
+							<input id="signup-name" type="text" name="name" class="validate">
+							<label class="active" for="signup-name">Name</label>
+						</div>
+						<div class="input-field col s12">
+							<input id="signup-pass" type="password" name="pass" class="validate">
+							<label class="active" for="signup-pass">Password</label>
+						</div>
+						<div class="input-field col s12">
+							<input id="signup-email" type="email" name="email" class="validate">
+							<label class="active" for="signup-email">Email</label>
+						</div>
+						<div class="col s3 ">
+							<p>
+								<label>
+									<input name="sex" type="radio" class="with-gap sex" value="male" checked />
+									<span>Male</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input name="sex" type="radio" class="with-gap sex" value="female" />
+									<span>Female</span>
+								</label>
+							</p>
+						</div>
+						<div class="input-field col s5 offset-s4">
+							<input id="signup-birthday" type="text" name="birthday" class="datepicker">
+							<label class="active" for="signup-birthday">Birthday</label>
+						</div>
+						<div class="col s12">
+							<div class="switch">
+							    <label>
+							      <input type="checkbox">
+							      <span class="lever"></span>
+							    </label>
+							    <span class="agreement">Yes, I read and agree <span class="form-slider-click">rules</span></span>
+							 </div>
+						</div>
+					
+						<div class="col s12 right-align">
+							<button id="signup-submit" class="waves-effect waves-light btn-small">Sign in</button>
+						</div>
+			 		</div>
+			 	</form>
+			</div>
+			<div class="right-part">
+				<span class="form-slider-back"> &#8592; back</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id facilis officia, voluptatum placeat ullam, cumque a minima ad odit, expedita ut rem ipsam ea eius, consectetur rerum labore eaque perspiciatis?</p>
+			</div>
+		</div>
+	</div>
+ 	
+
+<!-- Форма логина -->
+	
+	<div class="modal-login" data-modal="modal-1">
+		<span class="modal-close" data-modal="modal-1"></span>
+		<form>
+	 		<div class="row">
+	 			<div class="input-field col s12">
+					<input id="login-email" type="email" class="validate">
+					<label class="active" for="login-email">Email</label>
+				</div>
+				<div class="input-field col s12">
+					<input id="login-pass" type="password" class="validate">
+					<label class="active" for="login-pass">Password</label>
+				</div>
+				<div class="col s12 right-align">
+					<button id="login-submit" class="waves-effect waves-light btn-small">Login</button>
+				</div>
+	 		</div>
+	 	</form>
+	</div>
+
+	<div class="modal-overlay-all" id="overlay" data-modal="modal-1"></div>
+
+	
+<script src="materiallize/materialize.min.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

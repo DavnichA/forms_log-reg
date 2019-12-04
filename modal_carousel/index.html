@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<button class="modal-open" data-modal="modal-1">Open window</button>
+
+	<div class="modal" data-modal="modal-1">
+		<span class="modal-close" data-modal="modal-1"></span>
+
+		<div class="form-slider">
+			<div class="left-part">
+				<form action="">
+					<input type="text" placeholder="Name"  class="input_style">
+					<input type="email" placeholder="Email" class="input_style">
+					<input type="text" placeholder="Password" class="input_style">
+					<div class="gender_date">
+						<div class="gender">
+							<input type="radio" name="sex" value="male" id="radio_male" class="gender_radio">
+							<label for="radio_male">Male</label>
+							<br>
+							<input type="radio" name="sex" value="female" id="radio_female" class="gender_radio">
+							<label for="radio_female">Female</label>
+						</div>
+						<div class="date">
+							<input placeholder="Date" class="input_style" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date_style">
+						</div>
+					</div>
+					<div class="rules">
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider"></span>
+						</label>
+						<span class="agreement">Yes, I read and agree <span class="form-slider-click">rules</span></span>
+					</div>
+					<input type="submit" value="SEND">
+				</form>
+			</div>
+			
+			<div class="right-part">
+				<span class="form-slider-back"> &#8592; back</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium natus recusandae autem, eligendi ex totam voluptatem alias nulla inventore officia, quam. Incidunt, voluptatibus nemo quidem quod eligendi nobis illo! Cum!
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium natus recusandae autem, eligendi ex totam voluptatem alias nulla inventore officia, quam. Incidunt, voluptatibus nemo quidem quod eligendi nobis illo! Cum!
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium natus recusandae autem, eligendi ex totam voluptatem alias nulla inventore officia, quam. Incidunt, voluptatibus nemo quidem quod eligendi nobis illo! Cum!
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium natus recusandae autem, eligendi ex totam voluptatem alias nulla inventore officia, quam. Incidunt, voluptatibus nemo quidem quod eligendi nobis illo! Cum!
+
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium natus recusandae autem, eligendi ex totam voluptatem alias nulla inventore officia, quam. Incidunt, voluptatibus nemo quidem quod eligendi nobis illo! Cum!
+			</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-overlay" id="overlay" data-modal="modal-1"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
